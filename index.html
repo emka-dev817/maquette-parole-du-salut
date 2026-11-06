@@ -11,9 +11,9 @@ h1,h2,h3,h4,.d{font-family:'Dosis',sans-serif}
 .intro h1{font-size:40px;font-weight:700;color:var(--pd);line-height:1.1}
 .intro p{color:#555;max-width:720px;margin-top:10px;font-size:16px;line-height:1.5}
 .tag{display:inline-block;background:var(--p);color:var(--on-p);font:600 12px 'Figtree';letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:99px}
-.board{max-width:1440px;margin:0 auto 56px;padding:0 40px}
+.board{max-width:1440px;margin:0 auto 56px;padding:0 40px}@media(max-width:1440px){.board{padding:0 16px}.intro{padding:32px 16px 16px}.intro h1{font-size:30px}.note{padding:0 16px}}
 .board>h2{font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#666;margin:0 0 14px;font-weight:700}
-.frame{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.12)}
+.frame{width:1360px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.12)}
 .site{width:100%}
 .top{background:var(--pd);color:#fff;font-size:13px;padding:8px 48px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 48px;background:#fff;border-bottom:1px solid #eee;gap:20px}
@@ -154,5 +154,6 @@ td{padding:10px 6px;border-bottom:1px solid #f0f0f0}
 <div class="row2"><div class="pan"><h4>Dons des 6 derniers mois</h4><div class="bars"><div style="height:40%"><span>Juin</span></div><div style="height:46%"><span>Juil.</span></div><div style="height:52%"><span>Août</span></div><div style="height:60%"><span>Sept.</span></div><div style="height:74%"><span>Oct.</span></div><div style="height:90%"><span>Nov.</span></div></div></div><div class="pan split"><h4>Répartition par moyen de paiement</h4><div>M-Pesa <b style="float:right">41%</b><div class="tr"><i style="width:41%"></i></div></div><div>Orange Money <b style="float:right">27%</b><div class="tr"><i style="width:27%"></i></div></div><div>Airtel Money <b style="float:right">17%</b><div class="tr"><i style="width:17%"></i></div></div><div>Carte / PayPal <b style="float:right">15%</b><div class="tr"><i style="width:15%"></i></div></div></div></div>
 <div class="pan" style="margin-top:16px"><h4>Derniers dons</h4><table><tr><th>Donateur</th><th>Objet</th><th>Moyen</th><th>Montant</th><th>Reçu</th></tr><tr><td>G. Mbuyi</td><td>Offrandes</td><td>M-Pesa</td><td><b>10 000 FC</b></td><td><span class="st">Envoyé</span></td></tr><tr><td>E. Kalala</td><td>Dîmes</td><td>Orange Money</td><td><b>50 USD</b></td><td><span class="st">Envoyé</span></td></tr><tr><td>N. Lutete</td><td>Missions et extensions</td><td>Airtel Money</td><td><b>20 USD</b></td><td><span class="st">Envoyé</span></td></tr><tr><td>Diaspora · Bruxelles</td><td>Offrandes</td><td>Carte</td><td><b>30 €</b></td><td><span class="st">Envoyé</span></td></tr></table></div>
 </div></div></div></section>
+<script>function fit(){var w=Math.min(1,(document.documentElement.clientWidth-32)/1360);document.querySelectorAll(".frame").forEach(function(f){f.style.zoom=w})}fit();addEventListener("resize",fit)</script>
 <p class="note">Maquette de démonstration préparée par E&#x27;Markete Agency (emarketeagency.com). Logo, photos et textes proviennent des canaux officiels de l&#x27;église ; les chiffres du tableau de suivi sont des données d&#x27;exemple. Les mentions « à compléter » sont à confirmer avec l&#x27;église.</p>
 </body></html>
